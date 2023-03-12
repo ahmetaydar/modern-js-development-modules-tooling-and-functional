@@ -21,3 +21,9 @@ export default function (product, quantity) {
 
 addToCard('xxx', 111);
 console.log(card);
+
+addToCard('pizza', 2);
+addToCard('bread', 22);
+addToCard('apple', 21);
+addToCard('pizza', 2);
+console.log(card);
