@@ -1,6 +1,11 @@
 // exporting  module
 console.log('exporting  module');
 
+//blocking module
+
+// console.log('start fetching users');
+// await fetch('https://jsonplaceholder.typicode.com/users');
+// console.log('finish fetching users');
 const shippingCost = 10;
 export const card = [];
 
@@ -18,12 +23,3 @@ export default function (product, quantity) {
   card.push({ product, quantity });
   console.log(`${quantity} ${product} added to card`);
 }
-
-addToCard('xxx', 111);
-console.log(card);
-
-addToCard('pizza', 2);
-addToCard('bread', 22);
-addToCard('apple', 21);
-addToCard('pizza', 2);
-console.log(card);
