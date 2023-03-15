@@ -21,3 +21,4 @@ add('bread', 22);
 add('apple', 21);
 add('pizza', 2);
 console.log(card);
+console.log('clone deneme');
