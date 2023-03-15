@@ -78,7 +78,17 @@ console.log(ShoppingCard2);
 console.log(ShoppingCard2.shippingCost);
 */
 // addedn npm libraries
-import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+console.log('importing module');
+import add, { card } from './shoppingCart.js';
+
+add('pizza', 2);
+add('bread', 22);
+add('apple', 21);
+add('pizza', 2);
+console.log(card);
+// import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+
+import cloneDeep from 'lodash-es';
 
 const state = {
   cart: [
@@ -94,3 +104,7 @@ state.user.loggedIn = false;
 console.log(stateClone);
 
 console.log(stateDeepClone);
+
+if (module.hot) {
+  module.hot.accept();
+}
