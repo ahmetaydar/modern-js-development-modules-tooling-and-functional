@@ -23,3 +23,4 @@ export default function (product, quantity) {
   card.push({ product, quantity });
   console.log(`${quantity} ${product} added to card`);
 }
+console.log('xxxxxxxxx');
